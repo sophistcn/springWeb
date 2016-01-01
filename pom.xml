@@ -196,7 +196,13 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-
+		<!-- mysql driver -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.18</version>
+		</dependency>
+		
 		<!-- ojdbc6 -->
 		<dependency>
 			<groupId>com.oracle</groupId>

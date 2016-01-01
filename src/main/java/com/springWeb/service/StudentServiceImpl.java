@@ -12,7 +12,6 @@ public class StudentServiceImpl implements StudentService {
 	@Autowired
 	private SessionFactory sessionFactory;
 	
-	@Override
 	public void save(Student student) {
 		sessionFactory.getCurrentSession().save(student);
 	}
