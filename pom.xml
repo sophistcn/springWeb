@@ -18,8 +18,10 @@
 		<servlet.version>2.5</servlet.version>
 		
 
-		<!-- Spring -->
-		<spring-framework.version>3.2.3.RELEASE</spring-framework.version>
+		<!-- Spring --><!-- 
+		<spring-framework.version>3.2.3.RELEASE</spring-framework.version> -->
+		
+		<spring-framework.version>4.2.2.RELEASE</spring-framework.version>
 
 		<!-- Hibernate / JPA -->
 		<hibernate.version>4.2.1.Final</hibernate.version>
