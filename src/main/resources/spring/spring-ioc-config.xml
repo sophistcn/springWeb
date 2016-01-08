@@ -15,7 +15,7 @@
 	<context:component-scan base-package="com.springWeb" />
 	<context:annotation-config />
 
-	<!-- 读取mysql jdbc的配置 -->
+	<!-- 读取jdbc的配置 -->
 	<context:property-placeholder location="classpath:orm-config.properties" />
 	<!-- 配置数据源，从上面配置文件读取 -->
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
