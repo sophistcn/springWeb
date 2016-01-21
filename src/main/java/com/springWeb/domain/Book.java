@@ -1,5 +1,7 @@
 package com.springWeb.domain;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,6 +16,7 @@ public class Book {
 	private String bookName;
 	private String category;
 	private Double price;
+	private Date saveDate;
 	public Integer getId() {
 		return id;
 	}
@@ -43,6 +46,12 @@ public class Book {
 	}
 	public void setPrice(Double price) {
 		this.price = price;
+	}
+	public Date getSaveDate() {
+		return saveDate;
+	}
+	public void setSaveDate(Date saveDate) {
+		this.saveDate = saveDate;
 	}
 	
 }

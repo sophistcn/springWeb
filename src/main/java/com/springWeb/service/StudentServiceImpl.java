@@ -2,6 +2,7 @@ package com.springWeb.service;
 
 import java.util.List;
 
+import org.apache.commons.lang.StringUtils;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,9 @@ public class StudentServiceImpl implements StudentService {
 	private SessionFactory sessionFactory;
 	
 	public void save(Student student) {
+		if(StringUtils.isEmpty(student.getName())){
+			throw new RuntimeException("名字不能为空");
+		}
 		sessionFactory.getCurrentSession().save(student);
 	}
 

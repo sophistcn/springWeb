@@ -7,6 +7,16 @@ package com.springWeb.service;
  * @mailto: sophistwu@outlook.com
  **/
 public interface BookStoreService {
+	/**
+	 * 卖书
+	 * @return
+	 */
 	public Integer sellBook();
+	
+	/**
+	 * 进货
+	 * @return
+	 */
+	public Integer addBook();
 	
 }
