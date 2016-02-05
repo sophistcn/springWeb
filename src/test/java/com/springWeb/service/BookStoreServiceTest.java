@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.springWeb.TestBase;
+import com.springWeb.DBTestBase;
 
 /**
  * @desc:
@@ -12,7 +12,7 @@ import com.springWeb.TestBase;
  * @author: wuzhiping 
  * @mailto: sophistwu@outlook.com
  **/
-public class BookStoreServiceTest extends TestBase{
+public class BookStoreServiceTest extends DBTestBase{
 	@Test
 	public void testName() throws Exception {
 		getContext().getBean(BookStoreService.class).sellBook();

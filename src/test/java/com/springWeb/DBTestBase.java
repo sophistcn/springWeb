@@ -11,7 +11,7 @@ import junit.framework.TestCase;
  * @author: wuzhiping 
  * @mailto: sophistwu@outlook.com
  **/
-public abstract class TestBase extends TestCase{
+public abstract class DBTestBase extends TestCase{
 	public ApplicationContext getContext() {
 		ApplicationContext ctx  = new ClassPathXmlApplicationContext("spring/spring-ioc-config.xml");
 		return ctx;

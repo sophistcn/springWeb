@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.springWeb.TestBase;
+import com.springWeb.DBTestBase;
 
 /**
 * @author: 吴志平
@@ -14,7 +14,7 @@ import com.springWeb.TestBase;
 * @desc: 
 * 
 */
-public class JdbcConnectTest extends TestBase{
+public class JdbcConnectTest extends DBTestBase{
 	@Test
 	public void testName() throws Exception {
 		

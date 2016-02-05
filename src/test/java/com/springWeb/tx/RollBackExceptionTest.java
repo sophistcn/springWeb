@@ -5,7 +5,7 @@ import java.util.Date;
 import org.apache.commons.lang.time.DateFormatUtils;
 import org.junit.Test;
 
-import com.springWeb.TestBase;
+import com.springWeb.DBTestBase;
 import com.springWeb.domain.Student;
 import com.springWeb.service.StudentService;
 
@@ -15,7 +15,7 @@ import com.springWeb.service.StudentService;
  * @author: wuzhiping 
  * @mailto: sophistwu@outlook.com
  **/
-public class RollBackExceptionTest extends TestBase {
+public class RollBackExceptionTest extends DBTestBase {
 	@Test
 	public void testName() throws Exception {
 		Student student = new Student();
