@@ -23,7 +23,7 @@
 		<spring-framework.version>4.2.2.RELEASE</spring-framework.version>
 		 -->
 		 
-		<spring-framework.version>3.2.3.RELEASE</spring-framework.version>
+		<spring-framework.version>4.2.2.RELEASE</spring-framework.version>
 
 		<!-- Hibernate / JPA -->
 		<hibernate.version>4.2.1.Final</hibernate.version>
@@ -225,6 +225,12 @@
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 			<version>1.2.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.2.7</version>
 		</dependency>
 	</dependencies>	
 </project>
