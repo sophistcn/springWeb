@@ -5,8 +5,7 @@
 <mapper namespace="com.springWeb.mybatis.mapper.StudentMapper">
 
 	<insert id="save" parameterType="Student">
-		insert into
-		t_user(user_name,user_age) values(#{userName},#{age})
+		insert into student ( id,addr,age,birthdate,grade,name) values (hibernate_sequence.nextval,#{addr},#{age},#{birthDate},#{grade},#{name})
 	</insert>
 
 </mapper>

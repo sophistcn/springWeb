@@ -26,17 +26,18 @@
 
 	<!-- 读取jdbc的配置 -->
 	<context:property-placeholder location="classpath:orm-config.properties" />
+	
 	<!-- 配置数据源，从上面配置文件读取 -->
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-		<property name="driverClass" value="${database.driverClassName}" />
-		<property name="jdbcUrl" value="${database.url}" />
-		<property name="user" value="${database.username}" />
-		<property name="password" value="${database.password}" />
-		<property name="initialPoolSize" value="${pool.initialPoolSize}" />
-		<property name="minPoolSize" value="${pool.minPoolSize}" />
-		<property name="maxPoolSize" value="${pool.maxPoolSize}" />
-		<property name="maxIdleTime" value="${pool.maxIdleTime}" />
-		<property name="acquireIncrement" value="${pool.acquireIncrement}" />
+		<property name="driverClass" value="oracle.jdbc.OracleDriver" />
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.0.143:1522:NSDEV1" />
+		<property name="user" value="NSTCSA4642" />
+		<property name="password" value="106767" />
+		<property name="initialPoolSize" value="1" />
+		<property name="minPoolSize" value="1" />
+		<property name="maxPoolSize" value="2" />
+		<property name="maxIdleTime" value="120" />
+		<property name="acquireIncrement" value="1" />
 	</bean>
 
 	<!-- 配置SqlSessionFactoryBean -->
