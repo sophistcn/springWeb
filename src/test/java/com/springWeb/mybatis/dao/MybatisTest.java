@@ -31,7 +31,7 @@ public class MybatisTest extends TestCase {
 		student.setAddr("wwwwww");
 		student.setBirthDate(new Date());
 		student.setGrade(3);
-		student.setName("wzp");
+		student.setName("wzp' where 1=1 ");
 		student.setAge(28);
 		
 		ss.insert("com.springWeb.mybatis.mapper.StudentMapper.save", student);

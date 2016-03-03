@@ -12,5 +12,5 @@ import com.springWeb.domain.Student;
 * 
 */
 public interface StudentDao {
-	List<Student> getAllStudents();
+	List<Student> getAllStudents(Student student);
 }

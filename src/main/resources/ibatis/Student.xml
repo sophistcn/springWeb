@@ -10,8 +10,11 @@
 	<!-- Use type aliases to avoid typing the full classname every time. -->
 	<typeAlias alias="Student" type="com.springWeb.domain.Student" />
 	<!-- Select with no parameters using the result map for Account class. -->
-	<select id="getAllStudent" resultClass="Student">
-		select * from student
+	<select id="getAllStudent" resultClass="Student" parameterClass="com.springWeb.domain.Student">
+		select * from student where 1=1 
+		<isNotEmpty  property="name" prepend="and" >
+			name like #name#
+		</isNotEmpty>
 	</select>
 
 </sqlMap> 

@@ -13,7 +13,7 @@ import com.springWeb.domain.Student;
 */
 public class StudentDaoIbatis3Impl implements StudentDao{
 
-	public List<Student> getAllStudents() {
+	public List<Student> getAllStudents(Student student) {
 		return null;
 	}
 	

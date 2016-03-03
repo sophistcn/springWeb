@@ -2,6 +2,8 @@ package com.springWeb.ibatis.dao;
 
 import java.util.List;
 
+import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
+
 //import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 
 import com.springWeb.domain.Student;
@@ -13,11 +15,10 @@ import com.springWeb.domain.Student;
 * @desc: 
 * 
 */
-/*public class StudentDaoImpl extends SqlMapClientDaoSupport implements StudentDao {
+public class StudentDaoImpl extends SqlMapClientDaoSupport implements StudentDao {
 
-	public List<Student> getAllStudents() {
-		return getSqlMapClientTemplate().queryForList("Student.getAllStudent");
+	public List<Student> getAllStudents(Student student) {
+		return getSqlMapClientTemplate().queryForList("Student.getAllStudent",student);
 	}
 
 }
-*/
