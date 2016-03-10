@@ -6,6 +6,6 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- Uncomment and add your base-package here: <context:component-scan base-package="org.springframework.samples.service"/> -->
-	<context:component-scan base-package="com.springWeb.test.service" />
+	<context:component-scan base-package="com.springWeb.qualifier" />
 	<context:annotation-config />
 </beans>

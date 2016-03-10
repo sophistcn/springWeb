@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.springWeb.test.service.ProviderConsumer;
+import com.springWeb.qualifier.ProviderConsumer;
 
 /**
 * @author: 吴志平
