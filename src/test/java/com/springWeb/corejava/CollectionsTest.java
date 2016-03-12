@@ -2,6 +2,9 @@ package com.springWeb.corejava;
 
 import static org.junit.Assert.*;
 
+import java.util.Collections;
+import java.util.Map;
+
 import org.junit.Test;
 
 import junit.framework.TestCase;
@@ -17,5 +20,10 @@ public class CollectionsTest extends TestCase {
 	@Test
 	public void testName() throws Exception {
 		//System.out.println((Integer) true);
+	}
+	
+	@Test
+	public void testUtils() throws Exception {
+		Map map = Collections.emptyMap();
 	}
 }
