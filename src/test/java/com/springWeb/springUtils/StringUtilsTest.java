@@ -30,5 +30,7 @@ public class StringUtilsTest extends TestCase {
 		
 		Assert.notNull(null, "null error");
 		
+		
+		org.apache.commons.lang.StringUtils.isBlank("  ");
 	}
 }

@@ -239,5 +239,11 @@
 			<artifactId>p6spy</artifactId>
 			<version>2.1.4</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.directwebremoting</groupId>
+			<artifactId>dwr</artifactId>
+			<version>3.0.M1</version>
+		</dependency>
 	</dependencies>	
 </project>
