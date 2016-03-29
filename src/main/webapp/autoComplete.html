@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI 自动完成（Autocomplete） - 默认功能</title>
+  <link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+  <script src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="jqueryui/style.css">
+  <script>
+  /* $(function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  });
+   */
+  
+  $().ready(function() {
+		$("#tags").autocomplete("http://localhost/svn",{
+			minChars: 0,
+			max: 5,
+			autoFill: true,
+			mustMatch: true,
+			matchContains: true,
+			scrollHeight: 220,
+			formatItem: function(data, i, total) {
+				return "<I>"+data[0]+"</I>";
+			},
+			formatMatch: function(data, i, total) {
+				return data[0];
+			},
+			formatResult: function(data) {
+				return data[0];
+			}
+		});
+	});
+  </script>
+</head>
+<body>
+ 
+<div class="ui-widget">
+  <label for="tags">标签：</label>
+  <input id="tags">
+</div>
+ 
+ 
+</body>
+</html>
