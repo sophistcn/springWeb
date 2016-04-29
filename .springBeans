@@ -9,8 +9,13 @@
 	<configs>
 		<config>src/main/resources/spring/application-config.xml</config>
 		<config>src/test/java/com/springWeb/applicationContextAware/spring.xml</config>
+<<<<<<< .mine
+		<config>src/main/resources/spring/spring-jms.xml</config>
+||||||| .r24
+=======
 		<config>src/main/resources/spring/spring-autowire-test.xml</config>
 		<config>src/main/resources/spring/spring-property-place.xml</config>
+>>>>>>> .r25
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
