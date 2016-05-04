@@ -1,1 +1,1 @@
-搞主管的人适合去
+<%@ page isErrorPage=ture %>
