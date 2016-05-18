@@ -22,5 +22,7 @@ public class MainTest {
 		System.out.println(myBean.toString());
 		
 		
+		
+		//PropertyPlaceholderConfigurer
 	}
 }

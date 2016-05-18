@@ -23,7 +23,6 @@ public class ThreadPoolTest {
 		for(int i=1;i<100;i++){
 			cachedThreadPool.execute(new Runnable() {
 				public void run() {
-					
 				}
 			});	
 		}

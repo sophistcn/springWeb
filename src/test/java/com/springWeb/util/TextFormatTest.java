@@ -1,10 +1,8 @@
-package com.springWeb.cron;
+package com.springWeb.util;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import org.springframework.scheduling.quartz.SimpleTriggerBean;
-import org.springframework.web.servlet.DispatcherServlet;
 
 /**
 * @author: 吴志平
@@ -13,10 +11,9 @@ import org.springframework.web.servlet.DispatcherServlet;
 * @desc: 
 * 
 */
-public class SimpleTriggerBeanTest {
+public class TextFormatTest {
 	@Test
 	public void testName() throws Exception {
-//		SimpleTriggerBean 
-//		DispatcherServlet
+		
 	}
 }

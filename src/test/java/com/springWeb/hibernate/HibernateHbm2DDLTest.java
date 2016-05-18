@@ -18,5 +18,7 @@ public class HibernateHbm2DDLTest extends TestCase {
 	public void testName() throws Exception {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("spring/spring4-ioc-config.xml");
 		ctx.getBean("sessionFactory");
+		
+		
 	}
 }
