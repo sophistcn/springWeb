@@ -11,9 +11,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 * 
 */
 @Controller
+@RequestMapping("/hello")
 public class HelloController {
 	@RequestMapping("/hi")
 	public String sayHi(){
 		return "hi";
+	}
+	
+	@RequestMapping("/saveHi")
+	public String saveHi(Double amount){
+		System.out.println(amount);
+		return "success";
 	}
 }
