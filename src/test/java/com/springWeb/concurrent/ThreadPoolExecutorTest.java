@@ -39,7 +39,7 @@ public class ThreadPoolExecutorTest {
 			try {
 				String task = "task@ " + i;
 				System.out.println("put " + task);
-				threadPoolExecutor.submit(new ThreadPoolTask(task,hashtable));
+				threadPoolExecutor.execute(new ThreadPoolTask(task,hashtable));
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

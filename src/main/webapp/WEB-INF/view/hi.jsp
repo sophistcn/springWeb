@@ -20,7 +20,7 @@
 		<input type="submit" value="注册" name="testSubmit" />
 		<input type="reset" value="重置" />
 	</form:form> --%>
-	<form action="/hello/saveHi">
+	<form action="saveHi">
 		amount: <input type="text" name="amount" >
 		<input type="submit" >
 	</form>

@@ -1,5 +1,8 @@
 package com.springWeb.controller;
 
+import java.math.BigDecimal;
+
+import org.apache.activemq.protobuf.compiler.TextFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -20,6 +23,7 @@ public class HelloController {
 	
 	@RequestMapping("/saveHi")
 	public String saveHi(Double amount){
+		System.out.println(BigDecimal.valueOf(amount));
 		System.out.println(amount);
 		return "success";
 	}
